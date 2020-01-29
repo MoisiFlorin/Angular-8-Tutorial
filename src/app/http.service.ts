@@ -9,6 +9,6 @@ export class HttpService {
   constructor(private http: HttpClient) { }
 
   getList() {
-    return this.http.get('https://api.openbrewerydb.org/breweries')
+    return this.http.get('https://api.openbrewerydb.org/breweries?per_page=8')
   }
 }
