@@ -18,3 +18,12 @@ button {
     margin-bottom: 2em;
   }
 }
+
+.active {
+  background-color: green;
+  border: 2px solid black;
+}
+
+.nonactive {
+  background-color: red;
+}
