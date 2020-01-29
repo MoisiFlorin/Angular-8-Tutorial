@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  // tslint:disable-next-line: no-inferrable-types
   clickCounter: number = 0;
+  // tslint:disable-next-line: no-inferrable-types
   name: string = '';
 
   constructor() { }
@@ -20,10 +22,10 @@ export class HomeComponent implements OnInit {
   }
 
   setClasses() {
-    let myClasses = {
+    const myClasses = {
       active: this.clickCounter > 4,
       nonactive: this.clickCounter <= 4,
-    }
+    };
     return myClasses;
   }
 
